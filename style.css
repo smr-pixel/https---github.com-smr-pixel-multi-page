@@ -370,14 +370,21 @@ Add a Copyright */
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    width: 100vw;
+    max-width: none;
+    margin: 0;
+    position: relative;
 }
 
-/* Hide the images by default */
 .mySlides {
-  display: none;
+    width: 100%;
+}
+
+.mySlides img {
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Next & previous buttons */
