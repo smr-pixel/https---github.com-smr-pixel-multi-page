@@ -405,17 +405,20 @@ Add a Copyright */
 
 /* Position the previous button to the left */
 .prev {
+  cursor: pointer;
   left: 30%;
 }
 
 /* Position the "next button" to the right */
 .next {
+  cursor: pointer;
   right: 30%;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
+  cursor: pointer;
   background-color: rgba(0,0,0,0.8);
 }
 
@@ -464,4 +467,42 @@ Add a Copyright */
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@keyframes wander-pulse {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+
+  25% {
+    transform: translate(35vw, 12vh) scale(1.5);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: translate(70vw, -8vh) scale(1);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translate(50vw, 18vh) scale(1.5);
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: translate(90vw, -4vh) scale(1);
+    opacity: 1;
+  }
+}
+
+.butterfly {
+  display: block;
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 0;
+  animation: wander-pulse 8s ease-in-out infinite alternate;
 }
