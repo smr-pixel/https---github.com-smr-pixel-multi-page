@@ -1,6 +1,6 @@
 /* Select readable font and text/background colors with good contrast. To search for different Google Fonts, go to https://www.w3schools.com/howto/howto_google_fonts.asp */
 
-
+.button5 {border: 1px solid #555555;}
 
 body, html {
     height: 100%;
