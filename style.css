@@ -393,7 +393,7 @@ Add a Copyright */
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  transform: translateY(-50%);
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -403,9 +403,14 @@ Add a Copyright */
   user-select: none;
 }
 
+/* Position the previous button to the left */
+.prev {
+  left: 30%;
+}
+
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 30%;
   border-radius: 3px 0 0 3px;
 }
 
