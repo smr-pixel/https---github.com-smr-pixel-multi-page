@@ -45,6 +45,13 @@ body, html {
   }
   
 
+.third-click-textbox {
+    display: block;
+    width: 70%;
+    background-color:#f2f2f2;
+    border: 1px solid black;
+}
+
  /* The text-block class selector controls the text-box on screens >800px. You will also need to adjust values in the next text-box selector. */
 .text-block {
     display: block;
